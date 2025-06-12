@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import Admin from './components/pages/Admin'
+import Professores from './components/pages/Professores'
+import Profissionais from './components/pages/Profissionais'
+import Alunos from './components/pages/Alunos'
+import Eventos from './components/pages/Eventos'
+import Agendamentos from './components/pages/Agendamentos'
+import Usuarios from './components/pages/Usuarios'
+
+import Container from './components/layout/Container'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ul>
+        <Navbar />
+      </ul>
+      <Container customClass="min-height">
+        <Routes>
+          <Route path="/" element={<Admin />} />
+          <Route path="/professores" element={<Professores />} />
+          <Route path="/alunos" element={<Alunos />} />
+          <Route path="/eventos" element={<Eventos />} />
+          <Route path="/agendamentos" element={<Agendamentos />} />
+          <Route path="/profissionais" element={<Profissionais />} />
+          <Route path="/usuarios" element={<Usuarios />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
   );
 }
 
