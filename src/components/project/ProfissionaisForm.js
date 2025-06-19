@@ -3,7 +3,6 @@
 import {useState, useEffect} from 'react'
 
 import styles_form from './ProfissionaisForm.module.css'
-import styles_form from './ProfissionaisForm.module.css'
 import Input from  '../form/Input'
 import styles_prof from '../pages/Profissionais.module.css'
 

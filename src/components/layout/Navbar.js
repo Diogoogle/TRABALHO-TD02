@@ -13,7 +13,7 @@ function Navbar(){
                 <h1>GEE - Gestão de Ensino Especial</h1>
                 <ul class={styles.list}>
                     <li className={styles.item}> 
-                        <Link to="/">Admin</Link>
+                        <Link to="/admin">Admin</Link>
                     </li>
                     <li className={styles.item}>
                         <Link to="/profissionais">Profissionais de Saúde</Link>
