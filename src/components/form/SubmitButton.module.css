@@ -1,0 +1,23 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color:#FFF;
+    padding: 0.7em 0.7em;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    height: 25px;
+    width: 180px;
+    
+}
+
+.btn:hover{
+    color: #ffbb33;
+}
+
+
+
